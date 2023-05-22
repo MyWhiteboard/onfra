@@ -1,0 +1,132 @@
+.contacct_us_container {
+    padding: 70px 30px 0px 30px;
+    text-align: center;
+}
+
+
+.Contact_us_heading {
+    width: 100%;
+    text-align: center;
+    color: #513ADD;
+    font-size: 25px;
+    font-weight: 600;
+
+    padding: 0 0 20px 0;
+}
+
+.contacct_us_container form {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+.contact_form_element {
+    width: 100%;
+
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left !important;
+}
+
+.contact_form_element label {
+    margin: 0 0 -1px 0;
+}
+
+.contact_form_element input {
+    padding: 5px 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+.contact_form_element input:hover {
+    outline: 0;
+    border: 1px solid black;
+}
+
+.contact_form_element input:focus {
+    outline: 0;
+    border: 1px solid black;
+}
+
+.contact_form_element input:active {
+    outline: 0;
+    border: 1px solid black;
+}
+
+.contact_form_element textarea {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+}
+
+.contact_form_element textarea:hover {
+    outline: 0;
+    border: 1px solid black;
+}
+
+.contact_form_element textarea:focus {
+    outline: 0;
+    border: 1px solid black;
+}
+
+.contact_form_element textarea:active {
+    outline: 0;
+    border: 1px solid black;
+}
+
+.contact_form_element button {
+    width: max-content;
+    background-color: #513ADD;
+    margin: 0 auto;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 50px;
+    border: 0;
+}
+
+
+.contact_form_element button:hover {
+    outline: 0;
+}
+
+.contact_form_element button:focus {
+    outline: 0;
+}
+
+.contact_form_element button:active {
+    outline: 0;
+}
+
+
+
+
+.message_submited {
+    width: 100%;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message_submited button {
+    width: max-content;
+    background-color: #513ADD;
+    margin: 20px auto 0px auto;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 50px;
+    border: 0;
+}
+
+
+.message_submited button:hover {
+    outline: 0;
+}
+
+.message_submited button:focus {
+    outline: 0;
+}
+
+.message_submited button:active {
+    outline: 0;
+}

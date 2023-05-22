@@ -1,0 +1,113 @@
+.privacy_container {
+    width: 100%;
+    padding: 100px 0 0px 0;
+}
+
+.privacy_heading {
+    font-size: 30px;
+    font-family: Rampart;
+    color: #513ADD;
+    margin: 0 0 20px 0;
+    text-align: center !important;
+}
+
+
+.heading_para_container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.heading_box {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.para_box {
+    font-size: 12px;
+    padding: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+
+ul.accordion-list {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+ul.accordion-list li {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: 700 !important;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 20px 0 0;
+    margin: 0;
+    font-size: 15px !important;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+}
+
+h3:after {
+    content: "+";
+    font-family: "material-design-iconic-font";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ul.accordion-list li.active h3:after {
+    transform: rotate(45deg);
+}
+
+.answer {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.answer p {
+    position: relative;
+    font-weight: 300;
+    padding: 10px 0 0 0;
+    cursor: pointer;
+    line-height: 150%;
+    margin: 0 0 15px 0;
+    font-size: 13px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer span {
+    padding: 10px 0 5px 0;
+}

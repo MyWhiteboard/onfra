@@ -1,0 +1,194 @@
+.school_class_heading {
+    font-size: 7vw;
+    font-family: Rampart;
+    color: #513ADD;
+    text-align: center !important;
+    margin: 20px 0 40px 0;
+}
+
+.school_class_heading span {
+    font-size: 7vw;
+    font-family: Rampart;
+    color: #513ADD;
+    text-align: center !important;
+}
+
+
+.course_detail_live {
+    width: 90%;
+    margin: 0 auto 50px auto;
+    border: 10px solid #0096FF;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.course_detail_one_to_one {
+    width: 90%;
+    margin: 0 auto;
+    border: 10px solid #C70A80;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.price_area {
+    width: 80%;
+    background-color: #513ADD;
+    font-size: 18px;
+    padding: 5px 0 0 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    color: white;
+}
+
+.course_detail_heading {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 15px 0;
+    font-size: 20px;
+    font-family: ChelseaMarket;
+}
+
+.course_detail_paragraph {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+
+.course_detail_button {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.course_detail_button button {
+    color: white;
+    background-color: #513ADD;
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.course_detail_button button:hover {
+    outline: 0;
+}
+
+.course_detail_button button:active {
+    outline: 0;
+}
+
+.course_detail_button button:focus {
+    outline: 0;
+}
+
+
+.course_overview {
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.school_overview_heading {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    color: #513ADD;
+}
+
+.course_overview img {
+    width: 80%;
+    margin: 20px 0;
+}
+
+.school_overview_para {
+    width: 100%;
+    text-align: justify !important;
+    font-size: 12px;
+    font-family: Fredoka;
+}
+
+
+
+
+
+.filter_result_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_box {
+    width: max-content;
+    font-size: 11px;
+    background-color: rgb(210, 210, 210, 0.2);
+    padding: 5px 7px 0px 7px;
+    margin: 0px 2px;
+
+    display: flex;
+}
+
+.filter_box span {
+    opacity: 0.8;
+}
+
+.filter_explore_box button {
+    font-size: 11px;
+    background-color: #513ADD;
+    color: white;
+    border: 0;
+    padding: 5px 10px 0px 10px;
+    border-radius: 1px;
+    margin: 0px 2px;
+}
+
+.filter_explore_box button:hover {
+    outline: 0;
+}
+
+.filter_explore_box button:focus {
+    outline: 0;
+}
+
+.filter_explore_box button:active {
+    outline: 0;
+}
+
+
+
+
+.enroll_popup_form {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 20;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 30px 0 0 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.enroll_popup_form_show {
+    display: flex !important;
+}
+
+.enroll_popup_form_container {
+    width: calc(100vw - 50px);
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #858585;
+
+    padding: 20px;
+}

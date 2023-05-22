@@ -1,0 +1,146 @@
+.jee_neet_main_heading {
+    font-size: 7vw;
+    font-family: Rampart;
+    color: #513ADD;
+    text-align: center !important;
+    margin: 0 0 50px 0;
+}
+
+
+
+
+
+
+.jee_preparation_box {
+    width: 90%;
+    margin: 0 auto 50px auto;
+    border: 10px solid #0096FF;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.neet_preparation_box {
+    width: 90%;
+    border: 10px solid #C70A80;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto 50px auto;
+}
+
+.jee_neet_price_box {
+    width: 80%;
+    background-color: #513ADD;
+    font-size: 18px;
+    padding: 7px 0 3px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    color: white;
+}
+
+.jee_neet_heading {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 15px 0;
+    font-size: 20px;
+    font-family: ChelseaMarket;
+}
+
+.jee_neet_para {
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.jee_neet_buttons {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.jee_neet_buttons button {
+    color: white;
+    background-color: #513ADD;
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.jee_neet_buttons button:hover {
+    outline: 0;
+}
+
+.jee_neet_buttons button:active {
+    outline: 0;
+}
+
+.jee_neet_buttons button:focus {
+    outline: 0;
+}
+
+
+
+
+.jee_neet_course_container {
+    text-align: center;
+}
+
+.Course_jee_neet_heading {
+    width: 100%;
+    text-align: center;
+    color: #513ADD;
+    font-size: 25px;
+    font-weight: 600;
+
+    padding: 0 0 20px 0;
+}
+
+.jee_neet_course_container img {
+    width: 100%;
+}
+
+.course_jee_neet_para {
+    width: 100%;
+    padding: 20px 0 0 0;
+    text-align: justify !important;
+    font-size: 12px;
+    font-family: Fredoka;
+}
+
+
+
+
+.enroll_popup_form {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 20;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 30px 0 0 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.enroll_popup_form_show {
+    display: flex !important;
+}
+
+.enroll_popup_form_container {
+    width: calc(100vw - 50px);
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #858585;
+
+    padding: 20px;
+}

@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../page_stylings/index.css">
+    <link rel="stylesheet" href="../page_stylings/privacy.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Onfra - Terms and Conditions</title>
+</head>
+
+<body>
+
+    <div class="screen_resolution">Screen Resolution not supported</div>
+
+    <main>
+
+        <div class="navigation_bar" id="navigation_bar">
+
+            <div class="compnay_logo">
+                <img src="https://i.postimg.cc/26H3n519/White-Board-Logo.png" alt="Company logo" />
+            </div>
+
+            <div class="hamburger">
+
+                <button onclick="open_sideBAR('open')">
+                    <img class="Hamburger_icon" src="https://i.postimg.cc/SRJfHYf4/hamburger-icon.png"
+                        alt="Hamburger Icon" />
+                </button>
+
+            </div>
+
+            <div class="side_bar" id="side_bar">
+
+                <div class="white_space" onclick="open_sideBAR('close')"></div>
+
+                <div class="links_section">
+
+                    <div class="close_button">
+                        <button onclick="open_sideBAR('close')">
+                            <img src="https://i.postimg.cc/gk0K9BhQ/Cross-Icon.png" alt="cross Icon" />
+                        </button>
+                    </div>
+
+                    <div class="hamburger_page_link">
+                        <a href="../index.html">
+                            <img src="https://i.postimg.cc/mZjS5GP7/Home-side-Bar.png" alt="Home Icon" />
+                            <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="hamburger_page_link">
+
+                        <div class="course_link" onclick="open_side_Bar_InnerOption()">
+                            <img src="https://i.postimg.cc/t4KdxqcG/COurse-side-Bar.png" alt="Course Icon" />
+                            <span>Courses</span>
+                            <img class="down_arrow_sideBar" src="https://i.postimg.cc/9FNYcttM/Down-Arrow-side-Bar.png"
+                                alt="Down arrow" />
+                        </div>
+
+                        <div class="Course_inner_Section" id="Course_inner_Section">
+
+                            <div class="class_btn" onclick="open_close_explore_popup('open')">
+                                <span class="Left_line"></span>
+                                <span>LKG to 12th Courses</span>
+                            </div>
+
+                            <a href="./entrepreneur.html">
+                                <span class="Left_line"></span>
+                                <span>Entrepreneurship Course </span>
+                            </a>
+
+                            <a href="./jee.html">
+                                <span class="Left_line"></span>
+                                <span>JEE/NEET Exam</span>
+                            </a>
+
+                            <a href="./game-dev.html">
+                                <span class="Left_line"></span>
+                                <span>Game Development</span>
+                            </a>
+
+                            <a href="./app-dev.html">
+                                <span class="Left_line"></span>
+                                <span>App Development</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hamburger_page_link">
+                        <a href="./join.html">
+                            <img src="https://i.postimg.cc/mr7YNxxz/Join-side-Bar.png" alt="Join Icon" />
+                            <span>Join Us</span>
+                        </a>
+                    </div>
+
+                    <div class="hamburger_page_link">
+                        <a href="./contact.html">
+                            <img src="https://i.postimg.cc/JzDc0DPQ/contact-Us-side-Bar.png" alt="Contact Icon" />
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+
+                    <div class="hamburger_page_link" style="display: none;">
+                        <a href="#">
+                            <img src="https://i.postimg.cc/wMWvNBXV/Study-material.png" alt="Study Material Icon" />
+                            <span>Study Material</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="explore_popup_form" id="explore_popup_form">
+
+            <div class="explore_popup_container">
+
+                <form action="./school.html" method="get">
+
+                    <div class="form_field_container">
+
+                        <div class="explore_form_heading">Class</div>
+
+                        <select name="school_class" id="school_class" onchange="show_stream_field(this)" required>
+                            <option hidden></option>
+                            <option value="LKG">LKG</option>
+                            <option value="UKG">UKG</option>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                            <option value="5th">5th</option>
+                            <option value="6th">6th</option>
+                            <option value="7th">7th</option>
+                            <option value="8th">8th</option>
+                            <option value="9th">9th</option>
+                            <option value="10th">10th</option>
+                            <option value="11th">11th</option>
+                            <option value="12th">12th</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form_field_container">
+
+                        <div class="explore_form_heading">Board</div>
+
+                        <select name="board" id="board" required>
+                            <option hidden></option>
+                            <option value="CBSE">CBSE</option>
+                            <option value="ICSE">ICSE</option>
+                            <option value="State">State Board</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form_field_container stream_field" id="stream_field">
+
+                        <div class="explore_form_heading">Stream</div>
+
+                        <select name="Stream" id="Stream">
+                            <option hidden></option>
+                            <option value="Bio, Maths">Bio, Maths</option>
+                            <option value="Bio, IP">Bio, IP</option>
+                            <option value="Computer, Science">Computer Science</option>
+                            <option value="Commerce, Maths">Commerce, Maths</option>
+                            <option value="Commerce, IP">Commerce, IP</option>
+                            <option value="Humanities">Humanities</option>
+                        </select>
+
+                    </div>
+
+                    <div class="Explore_form_button">
+
+                        <div class="emty_area"></div>
+                        <div class="explore_button_container">
+                            <span class="exmplore_popup_cancel_btn"
+                                onclick="open_close_explore_popup('sdfg')">Cancel</span>
+                            <button class="exmplore_popup_submit_btn">Ok</button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="privacy_container">
+
+            <div class="privacy_heading">Terms & Conditions</div>
+            <div class="heading_para_container">
+                <div class="para_box">
+
+                    <p>
+                        These Terms & Conditions of use and Services (“Terms”) of (a) use of our
+                        website www.mywhiteboard.info (“Website”), our applications (“Application”)
+                        or any products or services in connection with the Application/,
+                        Website/products (“Services”) or (b) any modes of registrations or usage of
+                        products, including through SD cards, tablets or other storage/transmitting
+                        device are between Onfra Technologies Private Limited
+                        (“Company/We/Us/Our”) and its users (“User/You/Your”).
+                    </p>
+                    <p>
+                        These Terms constitute an electronic record in accordance with the provisions
+                        of the Information Technology Act, 2000 and the Information Technology
+                        (Intermediaries guidelines) Rules, 2011 thereunder, as amended from time to
+                        time.
+                    </p>
+                    <p>
+                        Please read the Terms and the privacy policy of the Company (“Privacy
+                        Policy”) with respect to registration with us, the use of the Application,
+                        Website, Services and products carefully before using the Application,
+                        Website, Services or products. In the event of any discrepancy between the
+                        Terms and any other policies with respect to the Application or Website or
+                        Services or products, the provisions of the Terms shall prevail.
+                    </p>
+                    <p>
+                        Your use/access/browsing of the Application or Website or the Services or
+                        products or registration (with or without payment/with or without
+                        subscription) through any means shall signify Your acceptance of the Terms
+                        and Your agreement to be legally bound by the same
+                    </p>
+
+                    <p>
+                        These Terms and Conditions, as amended from time to time, together with any
+                        other terms, agreements and policies referenced herein (which constitute an
+                        integral part hereof) (these “Terms”) constitute a legally binding agreement
+                        between My Whiteboard Private Limited., a company incorporated under the
+                        laws of India (the “My Whiteboard”) and the user accepting these Terms
+                        (the “User”). The Terms govern the manner in which the User may use and
+                        access the Website (as defined below) in a subscription model or otherwise.
+                        The User's use of the Website signifies the User's understanding and
+                        agreement to be bound to these Terms and to comply with the applicable law,
+                        rules and regulations. This Agreement applies to all visitors, users, members
+                        and others who access the website. If User does not agree to these Terms, User
+                        may not register or use the Website.
+                    </p>
+
+                </div>
+            </div>
+
+            <ul class="accordion-list">
+
+                <li>
+                    <h3>Registration:</h3>
+                    <div class="answer">
+
+                        <p>
+                            <span>
+                                1. Account Registration. In order to use the Website, the User shall
+                                register and create an account (the “Account”). The My Whiteboard
+
+                                provides registration for paid services (“Subscription”). The services
+                                and functionality available will vary based on account type and how
+                                account is configured by the account owners.
+                                The My Whiteboard reserves the right to refuse a User's registration
+                                or to block User's access to the Website, at the Onfra Technolgies's
+                                discretion.
+                            </span>
+                            <span>
+                                2. Account Information. As part of the registration process, the User
+                                may be required to provide the My Whiteboard with certain personal
+                                information (including, name, phone number, e-mail address, etc.)
+                                and to select a password. The User: (i) agrees to provide the My
+                                Whiteboard with accurate, complete, and updated registration
+                                information; (ii) acknowledges that he/she is solely responsible for
+                                the activity that occurs on his/her Account; (iii) agrees to keep
+                                his/her Account credentials secured; and (iv) undertakes to notify
+                                the My Whiteboard immediately of any breach of security or
+                                unauthorized use of his/her Account. The User will be solely
+                                responsible for any losses incurred by the My Whiteboard or a third
+                                party, due to any unauthorized usage of the Account by the User or
+                                any other third party on his/her behalf.
+                            </span>
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <h3>User Information</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1. General. While using the Website, certain data may be uploaded or
+                                transferred by the User to the Website to be processed by the
+                                Website on the User's behalf (the "User Information "). User
+                                Content may include data, information, files, documents, texts,
+                                designs, graphics, audio files or other sounds, photographs, images,
+                                videos, illustrations and other content, uploaded, transferred, posted
+                                or otherwise made available by the User to or by the use of the
+                                Website. As between the User and the My Whiteboard, all rights in
+                                the User Content shall remain with User.
+                            </span>
+                            <span>
+                                2. Your use of our products, Website, Application and Services is solely
+                                for Your personal and non-commercial use. Any use of the
+                                Application, Website, Services or products or their contents other
+                                than for personal purposes is prohibited. Your personal and
+                                non-commercial use of this Application, Website, products and / or
+                                our Services shall be subjected to the following restrictions:
+                            </span>
+
+                            <span>
+                                3. You may not decompile, reverse engineer, or disassemble the
+                                contents of the Application and / or our Website and/or Services/
+                                products or modify, copy, distribute, transmit, display, perform,
+                                reproduce, publish, license, create derivative works from, transfer,
+                                or sell any information or software obtained from the Application
+                                and / or our Website and/or Services/products, or remove any
+                                copyright, trademark registration, or other proprietary notices from
+
+                                the contents of the Application and / or and / or our Website and/or
+                                Services/products.
+                            </span>
+
+                        <p>
+                            <span>
+                                1. You will not (a) use this Application and / or our Website and/or
+                                any of our product/s or Service/s for commercial purposes of any
+                                kind, or (b) advertise or sell the Application or any products,
+                                Services or domain names or otherwise (whether or not for
+                                profit), or solicit others (including, without limitation,
+                                solicitations for contributions or donations) or use any public
+                                forum for commercial purposes of any kind, or (c) use the
+                                Application and / or Website/our products and Services in any
+                                way that is unlawful, or harms the Company or any other person
+                                or entity as determined by the Company.
+                            </span>
+                            <span>
+                                2. No User shall be permitted to perform any of the prohibited
+                                activities while availing our Services that: (i) infringes, violates,
+                                misuses or otherwise interferes with any copyright, patent,
+                                trademark, trade secret or other right of any third party; (ii) is
+                                defamatory, abusive, harassing, threatening, racist, or constitutes
+                                an invasion of a right of privacy of another person, or is otherwise
+                                offensive, violent, vulgar, obscene, pornographic, contains nudity,
+                                or otherwise harms or can reasonably be expected to harm any
+                                person or entity; (iii) is illegal or encourages or advocates illegal
+                                activity; (iv) posts or transmits any communication or solicitation
+                                designed or intended to obtain password, account, or private
+                                information from any third party; (v) contains viruses, trojan
+                                horses, worms, or any other computer programs designed to
+                                interrupt, destroy, or limit the functionality of the Website or any
+                                system, computer software, hardware or telecommunications
+                                equipment; (vi) creates a false identity or impersonates another
+                                person; (vii) “stalks” or otherwise harasses another or is
+                                antisocial, disruptive, or destructive, including “flaming”,
+                                “spamming”, “flooding” and “trolling” as such terms are
+                                commonly understood and used on the internet; (viii) violates any
+                                applicable local, state, national or international law or regulation;
+                                or (ix) includes any personal information of others, including,
+                                without limitation, their names, addresses, email addresses or
+                                telephone numbers, unless User has permission from such
+                                persons to do so. User is solely responsible for any violation of the
+                                aforementioned and for any damage or loss to the My Whiteboard
+                                or any other third party resulting therefrom.
+                            </span>
+                        </p>
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>The Website</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1. Permitted Use. Without derogating from Section 4.2 below, User
+                                may only use the Website for the User's personal non-profit use, as
+                                permitted by and subject to these Terms (the “Purpose”).
+                            </span>
+
+                            <span>
+                                2. Services : ”My Whiteboard” The Company facilitates online
+                                education services to children in various subjects. The concept is to
+                                create a virtual classroom, which helps the Child to learn without
+                                any restrictions on time and place.
+                            </span>
+
+                            <span>
+                                3. Subscription to the Website. The My Whiteboard shall make the
+                                Website available to User against payment of fees for access of
+                                premium services including updates if any as may be available
+                                online or via mobile application and shall be subject to the
+                                Subscription Terms as per the subscription Services.
+                            </span>
+
+                            <span>
+                                4. Subscription Limitations. The right to install, use and access the
+                                Website as set forth in Section 1.1 above, is granted solely to the User
+                                and is limited, non-transferable, non-exclusive, non-assignable and
+                                non-sub-licensable. The Website may only be used by individuals
+                                who: (i) can form legally binding contracts under applicable law, (ii)
+                                are of the age of eighteen (18) and above, and (iii) are not prohibited
+                                by law to subscribe to and use the Website.
+                            </span>
+
+                            <span>
+                                5. Modification or Discontinuation of the Website. The My Whiteboard
+                                may change or update the Website at any time, including the
+                                availability of any feature, content or database, and the My
+                                Whiteboard may impose limitations or restrictions on certain
+                                features and services or on the access to the Website (or any part
+                                thereof), without notice or liability. Furthermore, the My
+                                Whiteboard may offer alternative or additional features to certain
+                                Users, that may not be offered to others.
+                            </span>
+
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Intellectual Property and Right to Use</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1. My Whiteboard Intellectual Property. Intellectual Property Right:
+                                Except as mentioned below, all information, content, material,
+                                trademarks, services marks, trade names, and trade secrets
+                                including but not limited to the software, text, images, graphics,
+                                video, script and audio, contained in the Application, Website,
+                                Services and products are proprietary property of the Company
+                                (“Proprietary Information”). No Proprietary Information may be
+                                copied, downloaded, reproduced, modified, republished, uploaded,
+                                posted, transmitted or distributed in any way without obtaining
+                                prior written permission from the My Whiteboard and nothing on
+                                this Application or Website or Services shall be or products deemed
+                                to confer a license of or any other right, interest or title to or in any
+                                of the intellectual property rights belonging to the Company, to the
+                                User. You may own the medium on which the information, content
+                                or materials resides, but the My Whiteboard shall at all times retain
+                                full and complete title to the information, content or materials and
+                                all intellectual property rights inserted by the Company on such
+                                medium. Certain contents on the Website may belong to third
+                                parties. Such contents have been reproduced after taking prior
+                                consent from said party and all rights relating to such content will
+                                remain with such third party. Further, you recognize and
+                                acknoweldge that the ownership of all trademarks, copyright, logos,
+
+                                service marks and other intellectual property owned by any third
+                                party shall continue to vest with such party and You are not
+                                permitted to use the same without the consent of the respective third
+                                party.
+                            </span>
+                            <span>
+                                2. Prohibited Use: User may not, and may not permit or aid others to:
+                                (i) use the Website for any purpose other than the Purpose; (ii) copy,
+                                modify, alter, translate, emulate, create derivative works based on,
+                                or reproduce the Website or any content created through the
+                                Website; (iii) give, publish, sell, resell, distribute, assign, pledge or
+                                transfer (by any means), display, sublicense, rent, lease or otherwise
+                                share the rights granted under these Terms to any third party, or use
+                                the Website in any service bureau arrangement; (iv) publish, sell,
+                                resell, assign, pledge or transfer (by any means), sublicense, rent,
+                                lease or otherwise grant any right in any work or content created
+                                through the Website; (v) reverse engineer, de-compile, decrypt,
+                                revise or disassemble the Website or any part thereof, or extract
+                                source code from the object code of the Website, or access or use the
+                                Website in order to build a competing product or service; (vi) bypass
+                                any measures the My Whiteboard may use to prevent or restrict
+                                access to the Website, and/or take any action intended to
+                                circumvent or disable the operation of any security feature or
+                                measure of the Website; (vii) access the Website or My Whiteboard's
+                                systems via any means other than through the interface provided by
+                                the My Whiteboard, or via automated means, including by crawling,
+                                scraping, caching or otherwise; (viii) use the Website in any manner
+                                that is illegal or not authorized by these Terms; (ix) take any action
+                                that imposes or may impose (as determined by the My Whiteboard
+                                in its sole discretion) an unreasonable or disproportionately large
+                                load on Onfra Technolgies's (or Onfra Technolgies's service
+                                providers') infrastructure; (x) interfere or attempt to interfere with
+                                the integrity or proper working of the Website; (xi) remove, deface,
+                                obscure, or alter Onfra Technolgies's or any third party's
+                                identification, attribution or copyright notices, trademarks, or other
+                                proprietary rights affixed to or provided as part of the Website; or
+                                (xii) provide any third party access to the Website through User's
+                                Account.
+                            </span>
+                            <span>
+                                3. Feedback. User may notify the My Whiteboard of any design or
+                                functional errors, anomalies, and problems associated with the
+                                Website discovered by it and provide the My Whiteboard
+                                suggestions, comments, ideas, or any other feedback regarding the
+                                Website (the “Feedback”). Any such Feedback shall become the
+                                Onfra Technolgies's sole property without any restrictions. The My
+                                Whiteboard may use any Feedback at its sole discretion, free from
+                                any right of the User or any third party and without any obligation
+                                towards User. User hereby assigns to My Whiteboard all right, title,
+                                and interest worldwide in the Feedback and any intellectual
+                                property rights related thereto, and explicitly and irrevocably waives
+
+                                any and all claims associated therewith. User shall not provide the
+                                My Whiteboard with Feedback which infringes any third party right.
+                            </span>
+                            <span>
+                                4. Intellectual Property Infringements. The My Whiteboard does not
+                                permit copyright infringing activities and infringement of
+                                intellectual property rights via the Website. To file a copyright
+                                infringement notification, please send a written communication
+                                to mywhiteboardcopyright@gmail.com and the My Whiteboard will
+                                follow with additional instructions. In the event that the My
+                                Whiteboard believes that the Website, or any part thereof, may
+                                infringe intellectual property rights of third parties, then the My
+                                Whiteboard may, in its sole discretion: (i) obtain (at no additional
+                                cost to User) the right to continue to use the Website or the allegedly
+                                infringing part thereof; (ii) replace or modify the allegedly infringing
+                                part of the Website so that it becomes non-infringing while giving
+                                substantially equivalent performance; or (iii) if the My Whiteboard
+                                determines that the foregoing remedies are not reasonably available,
+                                then the My Whiteboard may require that use of the allegedly
+                                infringing Website or part thereof shall cease, and in such an event
+                                User shall receive a prorated refund of any Fees paid for the unused
+                                portion of the Subscription Term.
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Privacy; Data Protection; Anonymous Information</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1. Privacy Policy. User acknowledges and agrees that the use of the
+                                Website by the User is governed by the My Whiteboard's Privacy
+                                Policy (“Privacy Policy”). The Privacy Policy shall constitute and
+                                integral part of these Terms.
+                            </span>
+                            <span>
+                                2. Anonymous Information. The My Whiteboard may collect, monitor
+                                and use Anonymous Information (as defined below), inter alia to
+                                provide, develop, maintain, improve, demonstrate and market the
+                                Website. “Anonymous Information” means information about use of
+                                the Website which does not enable identification of an individual,
+                                such as aggregated data, metadata and analytic information.
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Third Party Software and Services</h3>
+                    <div class="answer">
+                        <p>
+                            Other Products and Services. The Website may contain links to other
+                            third-party services or may enable User to access, engage and
+                            procure certain services and products provided by third parties
+                            (the “Third Party Services”). User acknowledges and agrees that
+                            regardless of the manner in which such Third Party Services may be
+                            presented or offered to User, My Whiteboard does not endorse any
+                            such Third Party Services or shall be in any way responsible or liable
+                            with respect to any such Third Party Services.
+                            BY ACCESSING AND/OR USING THE THIRD PARTY SERVICES,
+                            USER ACKNOWLEDGES THAT ITS ACCESS AND USE OF THE
+                            THIRD PARTY SERVICES ARE AT ITS SOLE DISCRETION AND
+                            RISK, AND USER IS SOLELY RESPONSIBLE FOR ENSURING
+                            SUCH THIRD PARTY SERVICE ARE IN COMPLIANCE WITH
+                            USER'S REQUIREMENTS AND ANY APPLICABLE LAW OR
+                            REGULATION.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Subscription; Payment</h3>
+                    <div class="answer">
+                        <p>
+                            The Platform is a paid service and the payments made by You shall
+                            be according to the plans opted by You through the Platform. You
+                            explicitly agree to pay the fees for the courses/ plans that you
+                            purchase, and you authorize the Company to charge you as per the
+                            applicable payment mode opted by you. All payments shall be
+                            through the payment mechanism put in place by the Company and
+                            You shall be responsible for paying all fees and applicable taxes in a
+                            timely manner as per the mechanism associated with the Plan
+                            availed by You. Users have been given various options to choose and
+                            proceed with the payment for the Services via payment mechanisms
+                            including but not limited to Card Payment facilities, EMI Payment,
+                            Online Bank Transfer and Wallet Payment. With reference to
+                            Section 10, the payment gateway mechanisms are governed by the
+                            terms and conditions of the third-party providers as listed on the
+                            Platform and the User agrees to be bound by those terms.
+                        </p>
+                        <p>
+                            Valid Credit / Debit/ Cash Card/ online bank transfers and other
+                            payment instruments are processed using a Credit Card payment
+                            gateway or appropriate payment system infrastructure and the same
+                            will also be governed by the terms agreed to between the Users and
+                            the respective issuing bank and payment instrument issuing
+                            company. We shall not be liable for any unauthorized use, fraud,
+                            payment refunds, lost amount etc. in the transaction. The amount of
+                            refund payable shall only be limited to the amount paid by the User
+                            for Services which were not rendered to the User by Us. In case of
+                            refund of EMI transactions, User will be charged interest as per
+                            bank's regulations.
+                        </p>
+                        <p>
+                            Refund request will be accepted within 45 days of receiving first
+                            payment, post 45 days completion refund request won't be accepted.
+                            We attempt to process and complete customer refund requests
+                            within 7-10* Business days** from the time we receive a refund
+                            request. Our refund process may include a phone call to you, where
+                            we request course feedback and/or validation of key information
+                            needed to process your refund. If you have any questions about your
+                            refund request or the refund process, please contact us at
+                            mywhiteboardcare@gmail.com.
+                        </p>
+                        <p>
+                            Any charges related to app publishing (e.g. charges
+                        </p>
+                        <p>
+                            We reserve the right to change any fees at any time at our sole
+                            discretion and any change, update, or modification in the fee shall
+                            become effective immediately upon the same being posted/uploaded
+                            or notified on our website.
+                        </p>
+                        <p>
+                            We reserve the right to deduct the value of any cashback, discounts
+                            or rewards, including vouchers, received by You from the amount of
+                            a refund payable, should You request a refund prior to full course
+                            completion.
+                        </p>
+                        <p>*If you have financed your course(s) by obtaining a loan or financing
+                            through a third party financing entity, then the refund timeline and
+                            process will be in accordance with the terms and conditions that you
+                            agreed to with that financing entity. The Company cannot and shall
+                            not be held responsible for any delay or other issues on part of the
+                            third party loan financing entity in the processing and completion of
+                            such refund requests.</p>
+                        <p>**Business Day” shall mean any day excluding Saturday, Sunday
+                            and any bank holiday;</p>
+                        <p>Taxes. The Fees are exclusive of any and all taxes (including without
+                            limitation, value added tax, sales tax, use tax, excise, goods and
+                            services tax, etc.), levies, or duties, which may be imposed in respect
+                            of these Terms (the “Taxes”), except for income tax imposed on the
+                            My Whiteboard as per the provision of applicable tax laws in India.
+                            If User is located in a jurisdiction which requires User to deduct or
+                            withhold Taxes or other amounts from any amounts due to the My
+                            Whiteboard, User shall promptly notify the My Whiteboard in
+                            writing and the My Whiteboard shall make reasonable efforts to
+                            avoid any such Tax withholding, provided, however, that in any case,
+                            User shall bear the sole responsibility and liability to pay such Tax
+                            and such Tax shall be "grossed up" and added on top of the Fees
+                            payable by User.</p>
+                        <p>Payment Processing. User hereby authorizes the My Whiteboard,
+                            either directly or through third party's payment processing service,
+                            to charge the Fees via User's selected payment method. Payments
+                            processed by a third party are in such third party's exclusive
+                            responsibility and are subject to such third party's terms and
+                            conditions. User agrees that such third party's terms and conditions
+                            shall apply to its payment of the Fees. THE My Whiteboard WILL
+                            NOT BE LIABLE FOR THE ACTIONS OR OMISSIONS OF ANY
+                            THIRD-PARTY PAYMENT PROCESSOR. User hereby authorizes
+                            third-party payment processor to provide data and information to
+                            the My Whiteboard. The My Whiteboard will be free to replace the
+                            payment processor service from time to time or process payments
+                            itself.</p>
+                        <p>Credit Card. Credit card details may be needed to complete the
+                            purchase of services certain products offered on the Website. User
+                            authorizes the My Whiteboard to continue to charge its credit card
+                            or any replacement card upon the beginning of each Renewal Period
+                            for the then current Subscription Fee. Failure by the My Whiteboard
+
+                            to charge User's credit card shall not derogate from User's payment
+                            obligation.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Our Website provides</h3>
+                    <div class="answer">
+                        <p>
+                            Our Website provides Users with access to compiled educational
+                            information and related sources. Such information is provided on an
+                            As Is basis and We assume no liability for the accuracy or
+                            completeness or use or non obsolescence of such information. We
+                            shall not be liable to update or ensure continuity of such information
+                            contained on the Website. We would not be responsible for any
+                            errors, which might appear in such information, which is compiled
+                            from third party sources or for any unavailability of such
+                            information. From time to time the Website may also include links
+                            to other websites. These links are provided for your convenience to
+                            provide further information. They do not signify that we endorse the
+                            website(s). We have no responsibility for the content of the linked
+                            website(s). You may not create a link to the Website from another
+                            website or document without the Company's prior written consent.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Company set of modules</h3>
+                    <div class="answer">
+                        <p>
+                            The Company will have its sets of modules according to which the
+                            Child is expected to complete his/her levels. The Company has
+                            tutors who will be assisting the Child with their modules.
+                            The Company shall also grant you access to its material, content,
+                            curriculum, documents and other information and data
+                            (“Curriculum”) which may be in video, audio, written, graphic,
+                            recorded, photographic, or any other format in relation to the
+                            modules for which you have registered for. The Company reserves
+                            the right to amend, revise or update the Curriculum at any time.
+                            Click here to review our Class Scheduling Policy, which explains, if
+                            applicable, how to schedule, reschedule or cancel classes.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Applicants interested in teaching</h3>
+                    <div class="answer">
+                        <p>
+                            Applicants interested in teaching on the Platform may apply to do so
+                            by providing their full name, mobile number, and email address. A
+                            member of the My Whiteboard team may reach out to you on your
+                            registered contact details and conduct an evaluation. If the
+                            Applicant is chosen, then she/he may be onboarded as an Instructor
+                            on the Platform. Please note, your application on the Platform does
+                            not guarantee your selection as an Instructor.
+                            The Terms and Privacy Policy shall be applicable to you in addition
+                            to the Instructor engagement agreement provided to you as an
+                            Instructor.
+                            <br><br>
+                            You acknowledge and understand that children or their parents may
+                            leave ratings and reviews of your classes and that we are not
+                            responsible for these ratings and reviews.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>10.The contents of the Application / Services / products</h3>
+                    <div class="answer">
+                        The contents of the Application/Services/products are developed on
+                        the concepts covered in the structured curriculum syllabus
+                        prescribed for students of various courses. The usage of the
+                        Application/Services/products is not endorsed as a substitution to
+                        the curriculum based education provided by the educational
+                        institutions but is intended to supplement the same by explaining
+                        and presenting the concepts in a manner enabling easy
+                        understanding. The basic definitions and formulae of the subject
+                        matter would remain the same. The Company acknowledges that
+                        there are various means of delivering structured curriculum
+                        pedagogy and inclusion of methods in the
+                        Application/Services/products does not imply endorsement of any
+                        particular method nor exclusion imply disapproval. Subscription to
+                        the Application or usage of our Services/Website/products does not
+                        in any manner guarantee admission to any educational institutions
+                        or passing of any exams or achievement of any specified percentage
+                        of marks in any examinations.
+                    </div>
+                </li>
+
+                <li>
+                    <h3>User's confirmation, facilitate the demonstration</h3>
+                    <div class="answer">
+                        <p>
+                            While the Company may, based on the User's confirmation, facilitate
+                            the demonstration of its products at the location sought by the User,
+                            the User acknowledges that he/she has not been induced by any
+                            statements or representations of any person with respect to the
+                            quality or conditions of the products and that User has relied solely
+                            on the investigations, examinations and inspections as the User has
+                            chosen to make and that the Company has afforded the User the
+                            opportunity for full and complete investigations, examinations and
+                            inspections.
+                        </p>
+                        <p>
+                            Upon registration through any means whatsoever, the Company
+                            may contact You through the registered mobile number or e-mail or
+                            any other mobile number or contact number or email provided by
+                            You to enable effective provision of Services. The User expressly
+                            permits the Company to contact him/her and the student utilising
+                            the Services, through the above mentioned means at any time post
+                            registration. .-. Further, the Company shall have the right to monitor
+                            the download and usage of the Application/Services/products and
+                            the contents thereof by the User/student, to analyze such usage and
+                            discuss the same with the User/student to enable effective and
+                            efficient usage of the Services. The User expressly permits the
+                            Company to clear the doubts of the student using the
+                            Application/Services/online portal by answering the questions
+                            placed before it, providing study plans, informing of the progress,
+                            providing feedback, communicating with the student and mentoring
+                            the student through telephone or e-mail on express consent of the
+                            legal guardian/parent of the User or through any other forum.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Company has made efforts to train</h3>
+                    <div class="answer">
+                        <p>
+                            While the Company has made efforts to train the personnel engaged
+                            in the sales and services relating to its products to enable quality
+                            control, it makes no warranties or representations whatsoever
+                            regarding the quality and competence of such personnel and would
+                            not be responsible for any deviant behaviour of any such personnel.
+                            Any feedback from User relating to the same is most welcome and
+
+                            Company reserves the right and discretion to take any action in this
+                            regard.
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>Access to certain elements</h3>
+                    <div class="answer">
+                        <p>
+                            Access to certain elements of the Services including doubt clearance,
+                            mentoring services etc may be subject to separate terms, conditions
+                            and fair usage policy. The Company reserves the right to determine
+                            the criteria for provision of various elements of Services to the
+                            different categories of Users based on its policies. Hence,
+                            subscription to the Application/products or registrations do not
+                            automatically entitle the User to any and all elements of Services
+                            provided by the Company and the Company shall be entitled to
+                            exercise its discretion while providing access to and determining
+                            continuity of certain elements of Services. We reserve the right to
+                            extend, cancel, discontinue, prematurely withdraw or modify any of
+                            Our Services at Our discretion.
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>The Company's products and / or Services</h3>
+                    <div class="answer">
+                        <p>
+                            The Company's products and / or Services, including the Application
+                            and content, are compatible only with certain
+                            devices/tablets/instruments/hardware. The Company shall not be
+                            obligated to provide workable products and / or services for any
+                            instruments that are not recognized by the Company or those
+                            instruments that may be purchased from any third party which are
+                            not compatible with the Company's products and Services. The
+                            company reserves the right to upgrade the table/ type of compatible
+                            devices as required from time to time.
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>The Company shall have no responsibility</h3>
+                    <div class="answer">
+                        <p>
+                            The Company shall have no responsibility for any loss or damage
+                            caused to tablet or any other hardware and / or software and/or
+                            instrument, including loss of data or effect on the processing speed,
+                            resulting from Your use of our products and Services.
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>The Company has the right to change modify,</h3>
+                    <div class="answer">
+                        The Company has the right to change modify, suspend, or
+                        discontinue and/or eliminate any aspect(s), features or functionality
+                        of the Application or the Services as it deems fit at any time without
+                        notice. Further, the Company has the right to amend these Terms
+                        from time to time without prior notice to you. The Company makes
+                        no commitment, express or implied, to maintain or continue any
+                        aspect of the Application. You agree that the Company shall not be
+                        liable to You or any third party for any modification, suspension or
+                        discontinuance of the Application/Services. All prices are subject to
+                        change without notice.
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>Termination</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1.Termination or Suspension by My Whiteboard. My Whiteboard may
+                                terminate or suspend User's Subscription immediately, without
+
+                                prior notice or liability, if User breaches, or fails to comply with, any
+                                of the provisions contained in these Terms, and in each of the
+                                following events: (i) the My Whiteboard believes, in its sole
+                                discretion, that User or any third party is using the Website in a
+                                manner that may impose a security risk, may cause harm to the My
+                                Whiteboard or any third party, and/or may create any liability to the
+                                My Whiteboard or any third party; (ii) if the My Whiteboard
+                                believes, in its sole discretion, that User or any third party is using
+                                the Website in breach of these Terms or applicable laws; or (iii) if
+                                the My Whiteboard is unable to charge the Fees, if applicable,
+                                through User's approved payment means or if any payment is or is
+                                likely to become, overdue. The aforementioned rights are in addition
+                                to any rights and remedies that may be available to the My
+                                Whiteboard accordance with these Terms and/or applicable law.
+                            </span>
+                            <span>
+                                2. Termination by User. User may terminate its Subscription to the
+                                Website by cancelling the Subscription, whereby termination will
+                                take effect at the end of the then-current Subscription Term and
+                                shall not derogate from User's obligation to pay Fees for the
+                                Subscription Term, if applicable.
+                            </span>
+                            <span>
+                                3. Effect of Termination. Unless expressly indicated otherwise in these
+                                Terms, the termination or expiration of these Terms shall not relieve
+                                User from its obligation to pay due Fees. Upon termination or
+                                expiration of these Terms, User's Subscription and all rights granted
+                                to User hereunder shall terminate, and User shall cease to have
+                                access to the Website and any User Content. User is solely
+                                responsible to export all available User Content prior to such
+                                termination or expiration, and following termination or expiration,
+                                the My Whiteboard may delete the User Content without retaining
+                                any copy thereof.
+                            </span>
+                            <span>
+                                4. Survival. All the provisions of these Terms which by their nature
+                                should survive termination (including, without limitation,
+                                ownership and intellectual property, warranty disclaimers,
+                                indemnification obligations and limitations of liability) shall remain
+                                in full force and effect following termination thereof, for any reason
+                                whatsoever. Termination of these Terms shall not relieve User from
+                                any obligation arising or accruing prior to such termination or limit
+                                any liability which User otherwise may have to the My Whiteboard.
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>Warranty and Disclaimer</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1. USER EXPRESSLY ACKNOWLEDGES AND AGREES THAT
+                                ACCESS TO AND USE OF THE WEBSITE, AS WELL AS ANY
+                                RELATED SERVICES PROVIDED BY THE ONFRA
+                                TECHNOLGIES, ARE AT USER'S SOLE RISK AND THAT THE
+                                ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE,
+                                ACCURACY AND RESULTS IS SOLELY WITH USER.
+                            </span>
+                            <span>
+                                2. EXCEPT AS EXPLICITLY SET FORTH HEREIN, THE WEBSITE IS
+                                SUPPLIED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITH
+
+                                ALL FAULTS AND WITHOUT ANY WARRANTY OF ANY KIND
+                                AND WITHOUT WARRANTIES, GUARANTEES OR
+                                REPRESENTATIONS OF ANY KIND, WHETHER EXPRESS OR
+                                IMPLIED, STATUTORY, COMMON LAW OR OTHERWISE.
+                                ONFRA TECHNOLGIES DOES NOT WARRANT THAT THE USE
+                                OF THE WEBSITE WILL BE UNINTERRUPTED, ERROR-FREE
+                                OR WILL MEET USER'S SPECIFIC REQUIREMENTS OR
+                                EXPECTATIONS, OR THAT ANY INFORMATION OR ADVICE
+                                OBTAINED BY USER AS A RESULT OF USER USE OF THE
+                                WEBSITE WILL BE ACCURATE OR RELIABLE. NO ADVICE OR
+                                INFORMATION OBTAINED BY USER THROUGH OR FROM THE
+                                WEBSITE SHALL CREATE ANY WARRANTY OR IMPOSE ANY
+                                LIABILITY NOT EXPRESSLY STATED IN THESE TERMS.
+                            </span>
+                            <span>
+                                3. ONFRA TECHNOLGIES MAKES NO WARRANTY OR
+                                REPRESENTATION, EITHER EXPRESS OR IMPLIED,
+                                REGARDING THE WEBSITE AND USER'S USE THEREOF,
+                                INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED
+                                WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+                                PARTICULAR PURPOSE, ACCURACY, AVAILABILITY, SECURITY,
+                                COMPATIBILITY, NON-INFRINGEMENT OR COMPLETENESS
+                                OF RESPONSES, RESULTS AND LACK OF NEGLIGENCE.
+                            </span>
+                            <span>
+                                IN NO EVENT SHALL ONFRA ITS AFFILIATES, AGENTS,
+                                DIRECTORS, EMPLOYEES, SUPPLIERS OR LICENSORS BE
+                                LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL,
+                                SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES,
+                                INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF
+                                PROFITS, GOODWILL, USE, DATA OR OTHER INTANGIBLE
+                                LOSSES, THAT RESULT FROM THE USE OF, OR INABILITY TO
+                                USE, THIS SERVICE, INCLUDING WITHOUT LIMITATION,
+                                YOUR SUBMISSION OF USER CONTENT OR INFORMATION.
+                                UNDER NO CIRCUMSTANCES WILL ONFRA BE RESPONSIBLE
+                                FOR ANY DAMAGE, LOSS OR INJURY RESULTING FROM
+                                HACKING, TAMPERING OR OTHER UNAUTHORIZED ACCESS
+                                OR USE OF THE SERVICE OR YOUR ACCOUNT OR THE
+                                INFORMATION CONTAINED THEREIN
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>Limitation of Liability</h3>
+                    <div class="answer">
+                        <p>NOTWITHSTANDING ANYTHING IN THESE TERMS OR
+                            ELSEWHERE TO THE CONTRARY AND TO THE FULLEST EXTENT
+                            PERMITTED BY APPLICABLE LAW:</p>
+                        <p>
+                            <span>
+                                1.IN NO EVENT SHALL ONFRA TECHNOLGIES, ITS
+                                SHAREHOLDERS, DIRECTORS, OFFICERS, AFFILIATES,
+                                AGENTS, MEMBERS OR EMPLOYEES BE LIABLE UNDER ANY
+                                CONTRACT, NEGLIGENCE, STRICT LIABILITY, OR OTHER
+                                LEGAL OR EQUITABLE THEORY, FOR ANY: (I) SPECIAL,
+                                INCIDENTAL, PUNITIVE, CONSEQUENTIAL OR INDIRECT
+                                DAMAGES; (II) LOSS OF OR DAMAGE TO USER’S SYSTEMS,
+                                DEVICES, DATA, INFORMATION, GOODWILL, PROFITS,
+
+                                SAVINGS, OR PURE ECONOMIC LOSS; (III) THE FAILURE OF
+                                INDUSTRY STANDARD SECURITY MEASURES AND
+                                PROTECTIONS; AND/OR (IV) THE COST OF PROCURING ANY
+                                SUBSTITUTE GOODS OR SERVICES; REGARDLESS OF (A)
+                                WHETHER ONFRA TECHNOLGIES, ITS AFFILIATES OR
+                                THIRD-PARTY PROVIDERS, HAVE BEEN ADVISED OF THE
+                                POSSIBILITY OF SUCH DAMAGES OR SUCH DAMAGES WERE
+                                REASONABLY FORESEEABLE; OR (B) THE THEORY OR BASIS
+                                OF LIABILITY (SUCH AS, BUT NOT LIMITED TO, BREACH OF
+                                CONTRACT OR TORT).
+                            </span>
+                            <span>
+                                2. USER SPECIFICALLY AGREES THAT ONFRA TECHNOLGIES IS
+                                NOT RESPONSIBLE OR LIABLE FOR ANY UNLAWFUL,
+                                EXPLICIT OR OTHERWISE OBJECTIONABLE CONDUCT OF ANY
+                                OTHER PARTY ON OR THROUGH THE WEBSITE, OR FOR ANY
+                                INFRINGEMENT OR VIOLATION OF USER'S RIGHTS BY ANY
+                                OTHER PARTY, INCLUDING, WITHOUT LIMITATION, PRIVACY
+                                RIGHTS.
+                            </span>
+                            <span>
+                                3. TO THE EXTENT PERMITTED BY LAW, ONFRA TECHNOLGIES’S
+                                AGGREGATE AND TOTAL LIABILITY FOR ALL DIRECT CLAIMS,
+                                DAMAGES AND LOSSES (WHETHER IN CONTRACT, TORT OR
+                                OTHERWISE), IS LIMITED TO THE FEES PAID TO THE ONFRA
+                                TECHNOLGIES FOR USE OF THE WEBSITE IN THE SIX
+                                MONTHS PRECEDING THE CAUSE OF THE CLAIM, PROVIDED,
+                                HOWEVER, THAT IN THE EVENT OF SERVICES PROVIDED BY
+                                THE ONFRA TECHNOLGIES FOR NO CONSIDERATION, THE
+                                ONFRA TECHNOLGIES’S AGGREGATE AND TOTAL LIABILITY
+                                SHALL BE NIL.
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>Indemnification</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1. Indemnification by My Whiteboard. My Whiteboard shall
+                                indemnify, defend and hold harmless User from and against any
+                                claim, suit or proceeding brought against the User and shall pay any
+                                reasonable costs, damages, liabilities and expenses incurred by the
+                                User, to the extent such claim, suit, or proceeding is based on an
+                                allegation that the Website or the use thereof infringes any third
+                                party intellectual property right. User shall give My Whiteboard
+                                prompt written notice of any such claim made against it and shall
+                                grant My Whiteboard sole control of the defense of any such claim,
+                                suit or proceeding, including appeals, negotiations and any
+                                settlement or compromise thereof, except that My Whiteboard shall
+                                not enter into any settlement that affects User’s rights or interest
+                                without User’s prior written approval, which may not be
+                                unreasonably withheld or delayed. User shall, at Onfra Technolgies’s
+                                request and expense, provide such information and assistance in the
+                                defense of such claims as reasonably requested by My Whiteboard.
+                                The foregoing indemnification shall not apply in the event of (i)
+                                access to or use of the Website that is not permitted by these Terms
+                                or otherwise outside the scope of the Purpose; (ii) breach of these
+
+                                Terms by the User; or (iii) violation of any applicable law by the
+                                User.
+                            </span>
+                            <span>
+                                2. Indemnification by User. User shall defend, indemnify, and hold
+                                harmless the My Whiteboard and its affiliates, officers, directors,
+                                employees and agents from and against any and all claims, damages,
+                                obligations, liabilities, loss, reasonable expense or costs
+                                (collectively, “Losses”) incurred as a result of any third party claim
+                                (i) related to any User Content, including infringement or violation
+                                of a third party’s right (including without limitation, intellectual
+                                property or privacy rights); or (ii) resulting from User’s breach of
+                                these Terms
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <h3>Miscellaneous</h3>
+                    <div class="answer">
+                        <p>
+                            <span>
+                                1. Compliance. While using the Website, the User will comply with
+                                applicable laws.
+                            </span>
+                            <span>
+                                2. Amendments. The My Whiteboard reserves the right to change these
+                                Terms at any time by posting a new version In the event of a
+                                material change, the My Whiteboard shall notify the User by posting
+                                a notice in the Website, or by sending the User an email. Any such
+                                modifications shall become effective immediately upon posting.
+                            </span>
+                            <span>
+                                3. Export Control. The Website may be subject to Indian or foreign
+                                export controls, Laws and regulations (the “Export Controls”), and
+                                User agrees and confirms that: (i) User is not located or uses,
+                                exports, re-exports or imports the Website (or any portion thereof)
+                                in or to, any person, entity, organization, jurisdiction or otherwise,
+                                in violation of the Export Controls; (ii) User is solely responsible for
+                                complying with applicable Export Controls which may impose
+                                additional restrictions, prohibitions or requirements on the use of
+                                the Website.
+                            </span>
+                            <span>
+                                4. Force Majeure. Neither My Whiteboard nor User will be liable by
+                                reason of any failure or delay in the performance of its obligations
+                                on account of events beyond the reasonable control of a party, which
+                                may include denial-of-service attacks, interruption or failure of the
+                                Internet or any utility service, failures in third-party hosting
+                                services, strikes, shortages, riots, fires, pandemic, epidemics
+                                diseases, acts of God, war, terrorism, and governmental action.
+                            </span>
+                            <span>
+                                5. Governing Law; Jurisdiction. These Terms and its performance shall
+                                be governed by the laws of India, without regard to conflict of laws'
+                                provisions that would result in the application of the laws of any
+                                other jurisdiction. The parties hereto submit the exclusive
+                                jurisdiction to the courts of KERALA.
+                            </span>
+                            <span>
+                                6. Class Action Waiver. WHERE PERMITTED UNDER APPLICABLE
+                                LAWS, USER AND ONFRA TECHNOLGIES AGREE THAT EACH PARTY
+                                MAY BRING CLAIMS AGAINST THE OTHER PARTY ONLY IN ITS
+                                INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS
+                                MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE
+                                ACTION. Unless both User and the My Whiteboard agree, no
+                                arbitrator or judge may consolidate more than one person’s claims
+
+                                or otherwise preside over any form of a representative or class
+                                proceeding.
+                            </span>
+                            <span>
+                                7. Entire Agreement. These Terms (and the other terms, agreements
+                                and policies referenced herein) constitute the entire agreement
+                                between User and the My Whiteboard with respect to User’s use of
+                                the Website, and supersede all prior or contemporaneous
+                                understandings regarding such subject matter.
+                            </span>
+
+                            <span>
+                                8. Assignment. My Whiteboard may assign at any time any of its rights
+                                and/or obligations hereunder to any third party without User’s
+                                consent. User may not assign any of its rights or delegate any
+                                obligations hereunder, in whole or in part without the prior written
+                                consent of My Whiteboard, and any attempt by a User to do so shall
+                                be deemed null and void.
+                            </span>
+
+                            <span>
+                                9. Relationship of the Parties; No Third Party Beneficiaries. The parties
+                                are independent contractors. These Terms do not create a
+                                partnership, franchise, joint venture, agency, fiduciary or
+                                employment relationship between the parties. There are no third
+                                party beneficiaries to these Terms.
+                            </span>
+
+                            <span>
+                                10.Severability. In the event that a court of competent jurisdiction finds
+                                any provision of these Terms to be illegal, invalid or unenforceable,
+                                the remaining provisions will remain in full force and effect, and
+                                such provision shall be reformed only to the extent necessary to
+                                make it valid, enforceable and legal.
+                            </span>
+
+                            <span>
+                                11. No Waiver. The failure of the My Whiteboard to enforce any right or
+                                provision in these Terms will not constitute a waiver of such right or
+                                provision unless acknowledged and agreed by My Whiteboard in
+                                writing.
+                            </span>
+
+                            <span>
+                                12.The Company provides these Terms so that You are aware of the
+                                terms that apply to your use of the Website/Application and
+                                Services. You acknowledge that, the Company has given You a
+                                reasonable opportunity to review these Terms and that You have
+                                agreed to them
+                            </span>
+
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="heading_para_container">
+                <div class="para_box">
+                    For any questions or queries about these Terms or the Website in general,
+                    please do not hesitate to contact us at the following e-mail address:
+                    mywhiteboardcare@gmail.com
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer_section">
+
+            <div class="footer_content_container">
+
+                <div class="feature_page_link_box">
+                    <div class="feature_heading">Product</div>
+                    <div class="footer_page_links">
+                        <a href="../#Banner_section">Overview</a>
+                        <a href="../#course_section">Courses</a>
+                        <a href="../#features_section">Features</a>
+                    </div>
+                </div>
+                <div class="feature_page_link_box">
+                    <div class="feature_heading">Legal</div>
+                    <div class="footer_page_links">
+                        <a href="./privacy.html">Privacy&nbsp;Policy</a>
+                        <a href="./terms-conditions.html">Terms&nbsp;&&nbsp;Conditions</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+                <div class="feature_page_link_box">
+                    <div class="feature_heading">Company</div>
+                    <div class="footer_page_links">
+                        <a href="../#about_section">About&nbsp;Us</a>
+                        <a href="./contact.html">Contact&nbsp;Us</a>
+                        <a href="../#testimonial_section">Testimonials</a>
+                        <a href="./jee.html">Join&nbsp;Us</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function () {
+            $('.accordion-list > li > .answer').hide();
+
+            $('.accordion-list > li').click(function () {
+                if ($(this).hasClass("active")) {
+                    $(this).removeClass("active").find(".answer").slideUp();
+                } else {
+                    $(".accordion-list > li.active .answer").slideUp();
+                    $(".accordion-list > li.active").removeClass("active");
+                    $(this).addClass("active").find(".answer").slideDown();
+                }
+                return false;
+            });
+
+        });
+    </script>
+
+    <script src="../js_workings/index.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        var join_person_Age = document.getElementById('join_person_Age')
+        function ageCount(field) {
+            let now = new Date();                            //getting current date
+            let currentY = now.getFullYear();                //extracting year from the date
+            let currentM = now.getMonth();                   //extracting month from the date
+
+            let dobget = field.value;                               //getting user input
+            let dob = new Date(dobget);                             //formatting input as date
+            let prevY = dob.getFullYear();                          //extracting year from input date
+            let prevM = dob.getMonth();                             //extracting month from input date
+
+            var ageY = currentY - prevY;
+
+            join_person_Age.value = ageY;
+
+        }
+
+        var Onfra_join_form = document.getElementById('Onfra_join_form');
+
+        Onfra_join_form.addEventListener('submit', (event) => {
+
+            event.preventDefault();
+
+            let body =
+                `
+                Full_Name: ${Onfra_join_form.elements['join_person_name'].value},
+                Date_of_Birth: ${Onfra_join_form.elements['join_person_date_of_birth'].value},
+                Age: ${Onfra_join_form.elements['join_person_Age'].value},
+                Gender: ${Onfra_join_form.elements['join_person_Gender'].value},
+                Phone_number: ${Onfra_join_form.elements['join_person_Number'].value},
+                Email_Address: ${Onfra_join_form.elements['join_person_email'].value}
+            `;
+
+            // let file = Onfra_join_form.elements['join_person_cv'].files[0];
+
+            Email.send({
+
+                Host: "smtp.elasticemail.com",
+                Username: "techonfra@gmail.com",
+                Password: "26D9A777BF59EEA05FFD703ABAFAA0E3B5D5",
+                To: 'hrmywhiteboard@gmail.com',
+                From: "techonfra@gmail.com",
+                Subject: `${Onfra_join_form.elements['join_person_name'].value} want to join from website`,
+                Body: body
+
+            }).then((message) => {
+
+                remove_message_show_form()
+
+                setTimeout(() => {
+                    Onfra_join_form.elements['join_person_name'].value = ''
+                    Onfra_join_form.elements['join_person_date_of_birth'].value = ''
+                    Onfra_join_form.elements['join_person_Age'].value = ''
+                    Onfra_join_form.elements['join_person_Gender'].value = ''
+                    Onfra_join_form.elements['join_person_Number'].value = ''
+                    Onfra_join_form.elements['join_person_email'].value = ''
+                }, 500);
+
+            })
+        })
+
+        var message_submited = document.getElementById('message_submited');
+        function remove_message_show_form() {
+            if (message_submited.style.display == 'flex') {
+                message_submited.style.display = 'none';
+                Onfra_join_form.style.display = 'block';
+            } else {
+                message_submited.style.display = 'flex';
+                Onfra_join_form.style.display = 'none';
+            }
+        }
+
+        //------------------------------remove user smartness---------------------------------
+
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        }, false);
+
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+
+        //------------------------------remove user smartness---------------------------------
+
+    </script>
+
+</body>
+
+</html>

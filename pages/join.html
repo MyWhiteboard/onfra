@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../page_stylings/index.css">
+    <link rel="stylesheet" href="../page_stylings/contact.css">
+    <link rel="stylesheet" href="../page_stylings/join.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Onfra - Join Us</title>
+</head>
+
+<body>
+
+    <div class="screen_resolution">Screen Resolution not supported</div>
+
+    <main>
+
+        <div class="navigation_bar" id="navigation_bar">
+
+            <div class="compnay_logo">
+                <img src="https://i.postimg.cc/26H3n519/White-Board-Logo.png" alt="Company logo" />
+            </div>
+
+            <div class="hamburger">
+
+                <button onclick="open_sideBAR('open')">
+                    <img class="Hamburger_icon" src="https://i.postimg.cc/SRJfHYf4/hamburger-icon.png"
+                        alt="Hamburger Icon" />
+                </button>
+
+            </div>
+
+            <div class="side_bar" id="side_bar">
+
+                <div class="white_space" onclick="open_sideBAR('close')"></div>
+
+                <div class="links_section">
+
+                    <div class="close_button">
+                        <button onclick="open_sideBAR('close')">
+                            <img src="https://i.postimg.cc/gk0K9BhQ/Cross-Icon.png" alt="cross Icon" />
+                        </button>
+                    </div>
+
+                    <div class="hamburger_page_link">
+                        <a href="../index.html">
+                            <img src="https://i.postimg.cc/mZjS5GP7/Home-side-Bar.png" alt="Home Icon" />
+                            <span>Home</span>
+                        </a>
+                    </div>
+
+                    <div class="hamburger_page_link">
+
+                        <div class="course_link" onclick="open_side_Bar_InnerOption()">
+                            <img src="https://i.postimg.cc/t4KdxqcG/COurse-side-Bar.png" alt="Course Icon" />
+                            <span>Courses</span>
+                            <img class="down_arrow_sideBar" src="https://i.postimg.cc/9FNYcttM/Down-Arrow-side-Bar.png"
+                                alt="Down arrow" />
+                        </div>
+
+                        <div class="Course_inner_Section" id="Course_inner_Section">
+
+                            <div class="class_btn" onclick="open_close_explore_popup('open')">
+                                <span class="Left_line"></span>
+                                <span>LKG to 12th Courses</span>
+                            </div>
+
+                            <a href="./entrepreneur.html">
+                                <span class="Left_line"></span>
+                                <span>Entrepreneurship Course </span>
+                            </a>
+
+                            <a href="./jee.html">
+                                <span class="Left_line"></span>
+                                <span>JEE/NEET Exam</span>
+                            </a>
+
+                            <a href="./game-dev.html">
+                                <span class="Left_line"></span>
+                                <span>Game Development</span>
+                            </a>
+
+                            <a href="./app-dev.html">
+                                <span class="Left_line"></span>
+                                <span>App Development</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hamburger_page_link">
+                        <a href="./join.html">
+                            <img src="https://i.postimg.cc/mr7YNxxz/Join-side-Bar.png" alt="Join Icon" />
+                            <span>Join Us</span>
+                        </a>
+                    </div>
+
+                    <div class="hamburger_page_link">
+                        <a href="./contact.html">
+                            <img src="https://i.postimg.cc/JzDc0DPQ/contact-Us-side-Bar.png" alt="Contact Icon" />
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+
+                    <div class="hamburger_page_link" style="display: none;">
+                        <a href="#">
+                            <img src="https://i.postimg.cc/wMWvNBXV/Study-material.png" alt="Study Material Icon" />
+                            <span>Study Material</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="explore_popup_form" id="explore_popup_form">
+
+            <div class="explore_popup_container">
+
+                <form action="./school.html" method="get">
+
+                    <div class="form_field_container">
+
+                        <div class="explore_form_heading">Class</div>
+
+                        <select name="school_class" id="school_class" onchange="show_stream_field(this)" required>
+                            <option hidden></option>
+                            <option value="LKG">LKG</option>
+                            <option value="UKG">UKG</option>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                            <option value="5th">5th</option>
+                            <option value="6th">6th</option>
+                            <option value="7th">7th</option>
+                            <option value="8th">8th</option>
+                            <option value="9th">9th</option>
+                            <option value="10th">10th</option>
+                            <option value="11th">11th</option>
+                            <option value="12th">12th</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form_field_container">
+
+                        <div class="explore_form_heading">Board</div>
+
+                        <select name="board" id="board" required>
+                            <option hidden></option>
+                            <option value="CBSE">CBSE</option>
+                            <option value="ICSE">ICSE</option>
+                            <option value="State">State Board</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form_field_container stream_field" id="stream_field">
+
+                        <div class="explore_form_heading">Stream</div>
+
+                        <select name="Stream" id="Stream">
+                            <option hidden></option>
+                            <option value="Bio, Maths">Bio, Maths</option>
+                            <option value="Bio, IP">Bio, IP</option>
+                            <option value="Computer, Science">Computer Science</option>
+                            <option value="Commerce, Maths">Commerce, Maths</option>
+                            <option value="Commerce, IP">Commerce, IP</option>
+                            <option value="Humanities">Humanities</option>
+                        </select>
+
+                    </div>
+
+                    <div class="Explore_form_button">
+
+                        <div class="emty_area"></div>
+                        <div class="explore_button_container">
+                            <span class="exmplore_popup_cancel_btn"
+                                onclick="open_close_explore_popup('sdfg')">Cancel</span>
+                            <button class="exmplore_popup_submit_btn">Ok</button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="contacct_us_container">
+
+            <div class="Contact_us_heading">Join Us</div>
+
+            <img src="https://i.postimg.cc/mkZ9JGXN/join-us.png" alt="contact us Image">
+
+            <form id="Onfra_join_form">
+
+                <div class="contact_form_element">
+                    <label for="join_person_name">Full Name</label>
+                    <input type="text" id="join_person_name" name="join_person_name" required>
+                </div>
+
+                <div class="contact_form_element">
+                    <label for="join_person_date_of_birth">Date of Birth</label>
+                    <input type="date" id="join_person_date_of_birth" name="join_person_date_of_birth"
+                        onchange="ageCount(this)" required>
+                </div>
+
+                <div class="contact_form_element">
+                    <label for="join_person_Age">Age</label>
+                    <input type="number" maxlength="2" id="join_person_Age" name="join_person_Age" required>
+                </div>
+
+                <div class="contact_form_element">
+                    <label for="join_person_Gender">Gender</label>
+                    <input type="text" list="gender" id="join_person_Gender" name="join_person_Gender" required>
+
+                    <datalist id="gender">
+                        <option value="Male">
+                        <option value="Female">
+                        <option value="Other">
+                    </datalist>
+
+                </div>
+
+                <div class="contact_form_element">
+                    <label for="join_person_Number">Phone Number</label>
+                    <input type="tel" id="join_person_Number" name="join_person_Number" maxlength="10"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                        required>
+                </div>
+
+                <div class="contact_form_element">
+                    <label for="join_person_email">Email Address</label>
+                    <input type="text" id="join_person_email" name="join_person_email" required>
+                </div>
+
+                <div class="csv_file_form_element" style="display: none;">
+                    <label for="join_person_cv">
+                        Upload CV (optional)
+                        <div class="upload_icon">
+                            <svg viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.41 5.41L10.58 0.58C10.21 0.21 9.7 0 9.17 0H2C0.9 0 0.0100002 0.9 0.0100002 2L0 18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6.83C16 6.3 15.79 5.79 15.41 5.41ZM10.8 13H9V16C9 16.55 8.55 17 8 17C7.45 17 7 16.55 7 16V13H5.21C4.76 13 4.54 12.46 4.86 12.15L7.66 9.36C7.86 9.17 8.17 9.17 8.37 9.36L11.16 12.15C11.46 12.46 11.24 13 10.8 13ZM10 7C9.45 7 9 6.55 9 6V1.5L14.5 7H10Z"
+                                    fill="#858585" />
+                            </svg>
+                        </div>
+                    </label>
+                    <input type="file" id="join_person_cv" name="join_person_cv">
+                </div>
+
+                <div class="contact_form_element">
+                    <button>Confirm</button>
+                </div>
+
+            </form>
+
+            <div class="message_submited" id="message_submited">
+                <span>Your application has been submitted successfully. We will get back to you shortly</span>
+                <button onclick="remove_message_show_form()">ok</button>
+            </div>
+
+        </div>
+
+
+        <div class="footer_section">
+
+            <div class="footer_content_container">
+
+                <div class="feature_page_link_box">
+                    <div class="feature_heading">Product</div>
+                    <div class="footer_page_links">
+                        <a href="../#Banner_section">Overview</a>
+                        <a href="../#course_section">Courses</a>
+                        <a href="../#features_section">Features</a>
+                    </div>
+                </div>
+                <div class="feature_page_link_box">
+                    <div class="feature_heading">Legal</div>
+                    <div class="footer_page_links">
+                        <a href="./privacy.html">Privacy&nbsp;Policy</a>
+                        <a href="./terms-conditions.html">Terms&nbsp;&&nbsp;Conditions</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+                <div class="feature_page_link_box">
+                    <div class="feature_heading">Company</div>
+                    <div class="footer_page_links">
+                        <a href="../#about_section">About&nbsp;Us</a>
+                        <a href="./contact.html">Contact&nbsp;Us</a>
+                        <a href="../#testimonial_section">Testimonials</a>
+                        <a href="./jee.html">Join&nbsp;Us</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="../js_workings/index.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        var join_person_Age = document.getElementById('join_person_Age')
+        function ageCount(field) {
+            let now = new Date();                            //getting current date
+            let currentY = now.getFullYear();                //extracting year from the date
+            let currentM = now.getMonth();                   //extracting month from the date
+
+            let dobget = field.value;                               //getting user input
+            let dob = new Date(dobget);                             //formatting input as date
+            let prevY = dob.getFullYear();                          //extracting year from input date
+            let prevM = dob.getMonth();                             //extracting month from input date
+
+            var ageY = currentY - prevY;
+
+            join_person_Age.value = ageY;
+
+        }
+
+        var Onfra_join_form = document.getElementById('Onfra_join_form');
+
+        Onfra_join_form.addEventListener('submit', (event) => {
+
+            event.preventDefault();
+
+            let body =
+                `
+                Full_Name: ${Onfra_join_form.elements['join_person_name'].value},
+                Date_of_Birth: ${Onfra_join_form.elements['join_person_date_of_birth'].value},
+                Age: ${Onfra_join_form.elements['join_person_Age'].value},
+                Gender: ${Onfra_join_form.elements['join_person_Gender'].value},
+                Phone_number: ${Onfra_join_form.elements['join_person_Number'].value},
+                Email_Address: ${Onfra_join_form.elements['join_person_email'].value}
+            `;
+
+            // let file = Onfra_join_form.elements['join_person_cv'].files[0];
+
+            Email.send({
+
+                Host: "smtp.elasticemail.com",
+                Username: "techonfra@gmail.com",
+                Password: "26D9A777BF59EEA05FFD703ABAFAA0E3B5D5",
+                To: 'hrmywhiteboard@gmail.com',
+                From: "techonfra@gmail.com",
+                Subject: `${Onfra_join_form.elements['join_person_name'].value} want to join from website`,
+                Body: body
+
+            }).then((message) => {
+
+                remove_message_show_form()
+
+                setTimeout(() => {
+                    Onfra_join_form.elements['join_person_name'].value = ''
+                    Onfra_join_form.elements['join_person_date_of_birth'].value = ''
+                    Onfra_join_form.elements['join_person_Age'].value = ''
+                    Onfra_join_form.elements['join_person_Gender'].value = ''
+                    Onfra_join_form.elements['join_person_Number'].value = ''
+                    Onfra_join_form.elements['join_person_email'].value = ''
+                }, 500);
+
+            })
+        })
+
+        var message_submited = document.getElementById('message_submited');
+        function remove_message_show_form() {
+            if (message_submited.style.display == 'flex') {
+                message_submited.style.display = 'none';
+                Onfra_join_form.style.display = 'block';
+            } else {
+                message_submited.style.display = 'flex';
+                Onfra_join_form.style.display = 'none';
+            }
+        }
+
+        //------------------------------remove user smartness---------------------------------
+
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        }, false);
+
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+
+        //------------------------------remove user smartness---------------------------------
+
+    </script>
+
+</body>
+
+</html>
