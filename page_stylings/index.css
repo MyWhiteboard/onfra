@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: pacifico;
+    src: url(../page_stylings/Pacifico-Regular.ttf);
+}
+
+@font-face {
     font-family: inria;
     src: url(../page_stylings/InriaSerif-Regular.ttf);
 }
@@ -112,6 +117,17 @@ main {
     transition: .3s all ease-in-out;
     background-color: white !important;
 }
+
+.compnay_logo {
+    width: max-content;
+}
+
+.compnay_logo a {
+    font-size: 21px;
+    color: #875dff;
+    font-family: pacifico;
+}
+
 
 .hamburger {
     width: max-content;

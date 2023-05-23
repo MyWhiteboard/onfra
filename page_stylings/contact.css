@@ -5,13 +5,11 @@
 
 
 .Contact_us_heading {
-    width: 100%;
-    text-align: center;
+    font-size: 30px;
+    font-family: Rampart;
     color: #513ADD;
-    font-size: 25px;
-    font-weight: 600;
-
-    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    text-align: center !important;
 }
 
 .contacct_us_container form {
