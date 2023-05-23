@@ -239,7 +239,7 @@
 
                 <div class="jee_neet_buttons">
                     <button onclick="school_enroll_button('Basic_level')">
-                        Enroll Now
+                        Enquire Now
                     </button>
                 </div>
 
@@ -275,7 +275,7 @@
 
                 <div class="jee_neet_buttons">
                     <button onclick="school_enroll_button('Advanced_level')">
-                        Enroll Now
+                        Enquire Now
                     </button>
                 </div>
 
@@ -311,7 +311,7 @@
 
                 <div class="jee_neet_buttons">
                     <button onclick="school_enroll_button('pro_level')">
-                        Enroll Now
+                        Enquire Now
                     </button>
                 </div>
 
@@ -475,8 +475,11 @@
                 From: "techonfra@gmail.com",
                 Subject: `${enroll_popup.elements['enrollperson_name'].value} Wants to Enroll from website`,
                 Body: body
+
             }).then(
                 (message) => {
+
+                    console.log(message)
 
                     remove_message_show_form()
 

@@ -4,10 +4,10 @@ var cbse_school_data = [
         class: `LKG`,
         data_price: {
             live_original_price: `2999`,
-            live_price: `2999`,
+            live_price: `1999`,
             live_data: `Access to daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goal.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`,
             one_to_one_original_Price: `3999`,
-            one_to_one_Price: `3999`,
+            one_to_one_Price: `2999`,
             one_to_one: `Access to Individual one on one daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`
         },
     },
@@ -16,10 +16,10 @@ var cbse_school_data = [
         class: `UKG`,
         data_price: {
             live_original_price: `2999`,
-            live_price: `2999`,
+            live_price: `1999`,
             live_data: `Access to daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goal.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`,
             one_to_one_original_Price: `3999`,
-            one_to_one_Price: `3999`,
+            one_to_one_Price: `2999`,
             one_to_one: `Access to Individual one on one daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`
         },
     },
@@ -28,10 +28,10 @@ var cbse_school_data = [
         class: `1st`,
         data_price: {
             live_original_price: `2999`,
-            live_price: `2999`,
+            live_price: `1999`,
             live_data: `Access to daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goal.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`,
             one_to_one_original_Price: `3999`,
-            one_to_one_Price: `3999`,
+            one_to_one_Price: `2999`,
             one_to_one: `Access to Individual one on one daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`
         },
     },
@@ -40,10 +40,10 @@ var cbse_school_data = [
         class: `2nd`,
         data_price: {
             live_original_price: `2999`,
-            live_price: `2999`,
+            live_price: `1999`,
             live_data: `Access to daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goal.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`,
             one_to_one_original_Price: `3999`,
-            one_to_one_Price: `3999`,
+            one_to_one_Price: `2999`,
             one_to_one: `Access to Individual one on one daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`
         },
     },
@@ -52,10 +52,10 @@ var cbse_school_data = [
         class: `3rd`,
         data_price: {
             live_original_price: `2999`,
-            live_price: `2999`,
+            live_price: `1999`,
             live_data: `Access to daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goal.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`,
             one_to_one_original_Price: `3999`,
-            one_to_one_Price: `3999`,
+            one_to_one_Price: `2999`,
             one_to_one: `Access to Individual one on one daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`
         },
     },
@@ -64,10 +64,10 @@ var cbse_school_data = [
         class: `4th`,
         data_price: {
             live_original_price: `2999`,
-            live_price: `2999`,
+            live_price: `1999`,
             live_data: `Access to daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goal.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`,
             one_to_one_original_Price: `3999`,
-            one_to_one_Price: `3999`,
+            one_to_one_Price: `2999`,
             one_to_one: `Access to Individual one on one daily online class in wide range of subjects like English,Mathematics, Environmental Science(EVS).Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`
         },
     },
@@ -76,10 +76,10 @@ var cbse_school_data = [
         class: `5th`,
         data_price: {
             live_original_price: `2999`,
-            live_price: `2999`,
+            live_price: `1999`,
             live_data: `Access to daily online class in wide range of subjects like English,Mathematics,Science,Social Science.Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`,
             one_to_one_original_Price: `3999`,
-            one_to_one_Price: `3999`,
+            one_to_one_Price: `2999`,
             one_to_one: `Access to Individual one on one daily online class in wide range of subjects like English,Mathematics,Science,Social Science.Personalized learning experience tailored to your needs and preferences.Regular tests are conducted to help students to stay on tracks with the learning goals.Progress meetings are to held to share the students academic progress.The expert mentors will help them in completing their day to day academic home works and challenges.Highly qualified instructors with experience in teaching.Flexibility to learn from your comfort at affordable prices`
         },
     },

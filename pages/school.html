@@ -227,7 +227,7 @@
                 <div class="course_detail_heading">Live Classes</div>
                 <div class="course_detail_paragraph" id="class_paragraph_live"></div>
                 <div class="course_detail_button">
-                    <button onclick="school_enroll_button('live')">Enroll Now</button>
+                    <button onclick="school_enroll_button('live')">Enquire Now</button>
                 </div>
 
             </div>
@@ -239,7 +239,7 @@
                 <div class="course_detail_heading">One-on-One Classes</div>
                 <div class="course_detail_paragraph" id="class_paragraph_one_to_one"></div>
                 <div class="course_detail_button">
-                    <button onclick="school_enroll_button('one_to_one')">Enroll Now</button>
+                    <button onclick="school_enroll_button('one_to_one')">Enquire Now</button>
                 </div>
 
             </div>
@@ -404,6 +404,8 @@
                 Body: body
             }).then(
                 (message) => {
+
+                    console.log(message)
 
                     remove_message_show_form()
 

@@ -239,7 +239,7 @@
 
                 <div class="jee_neet_buttons">
                     <button onclick="school_enroll_button('jee')">
-                        Enroll Now
+                        Enquire Now
                     </button>
                 </div>
 
@@ -273,7 +273,7 @@
 
                 <div class="jee_neet_buttons">
                     <button onclick="school_enroll_button('neet')">
-                        Enroll Now
+                        Enquire Now
                     </button>
                 </div>
 
@@ -422,8 +422,6 @@
                     --------
                     Wants to Enroll in 
                     --------
-                    Course Name: Game Development Courses,
-                    --------
                     Course Type: ${selected_what}
                 `;
 
@@ -438,6 +436,9 @@
                 Body: body
             }).then(
                 (message) => {
+
+                    console.log(message)
+
                     remove_message_show_form()
                     setTimeout(() => {
 
