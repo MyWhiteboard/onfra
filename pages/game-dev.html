@@ -453,6 +453,8 @@
         enroll_popup.addEventListener('submit', (event) => {
 
             event.preventDefault();
+            remove_message_show_form()
+
 
             let body =
                 `
@@ -481,7 +483,6 @@
 
                     console.log(message)
 
-                    remove_message_show_form()
 
                     setTimeout(() => {
 
@@ -491,7 +492,7 @@
                     }, 500);
 
                 }
-            )
+            ).catch((err) => { console.message(err) })
 
         });
 

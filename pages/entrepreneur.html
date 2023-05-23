@@ -411,6 +411,7 @@
         enroll_popup.addEventListener('submit', (event) => {
 
             event.preventDefault();
+            remove_message_show_form()
 
             let body =
                 `
@@ -439,7 +440,6 @@
 
                     console.log(message)
 
-                    remove_message_show_form()
                     setTimeout(() => {
 
                         enroll_popup.elements['enrollperson_name'].value = ''

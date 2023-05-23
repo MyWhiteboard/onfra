@@ -379,10 +379,12 @@
 
             event.preventDefault();
 
+            remove_message_show_form()
+
             let body =
                 `
                     Person Name: ${enroll_popup.elements['enrollperson_name'].value},
-                    Peson Number: ${enroll_popup.elements['enroll_person_number'].value},
+                    Person Number: ${enroll_popup.elements['enroll_person_number'].value},
                     --------
                     Wants to Enroll in 
                     --------
@@ -406,8 +408,6 @@
                 (message) => {
 
                     console.log(message)
-
-                    remove_message_show_form()
 
                     setTimeout(() => {
 

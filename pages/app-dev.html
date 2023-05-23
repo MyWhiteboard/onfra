@@ -237,7 +237,7 @@
                 </div>
 
                 <div class="jee_neet_buttons">
-                    <button onclick="school_enroll_button('basic_level')">
+                    <button onclick="school_enroll_button('Basic_level')">
                         Enquire Now
                     </button>
                 </div>
@@ -271,7 +271,7 @@
                 </div>
 
                 <div class="jee_neet_buttons">
-                    <button onclick="school_enroll_button('advacned_level')">
+                    <button onclick="school_enroll_button('Advanced_level')">
                         Enquire Now
                     </button>
                 </div>
@@ -456,6 +456,8 @@
         enroll_popup.addEventListener('submit', (event) => {
 
             event.preventDefault();
+            remove_message_show_form()
+
 
             let body =
                 `
@@ -484,7 +486,6 @@
 
                     console.log(message)
 
-                    remove_message_show_form()
                     setTimeout(() => {
 
                         enroll_popup.elements['enrollperson_name'].value = ''
