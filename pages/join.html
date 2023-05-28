@@ -345,23 +345,21 @@
 
             let body =
                 `
-                Full_Name: ${Onfra_join_form.elements['join_person_name'].value},
-                Date_of_Birth: ${Onfra_join_form.elements['join_person_date_of_birth'].value},
-                Age: ${Onfra_join_form.elements['join_person_Age'].value},
-                Gender: ${Onfra_join_form.elements['join_person_Gender'].value},
-                Phone_number: ${Onfra_join_form.elements['join_person_Number'].value},
-                Email_Address: ${Onfra_join_form.elements['join_person_email'].value}
-            `;
+                    <b>Full_Name:</b> ${Onfra_join_form.elements['join_person_name'].value}<br>
+                    <b>Date_of_Birth:</b> ${Onfra_join_form.elements['join_person_date_of_birth'].value}<br>
+                    <b>Age:</b> ${Onfra_join_form.elements['join_person_Age'].value}<br>
+                    <b>Gender:</b> ${Onfra_join_form.elements['join_person_Gender'].value}<br>
+                    <b>Phone_number:</b> ${Onfra_join_form.elements['join_person_Number'].value}<br>
+                    <b>Email_Address:</b> ${Onfra_join_form.elements['join_person_email'].value}
+                `;
 
             // let file = Onfra_join_form.elements['join_person_cv'].files[0];
 
             Email.send({
 
-                Host: "smtp.elasticemail.com",
-                Username: "techonfra@gmail.com",
-                Password: "26D9A777BF59EEA05FFD703ABAFAA0E3B5D5",
+                SecureToken: "f559df71-f6ec-402c-a239-d3e1c9220852",
                 To: 'hrmywhiteboard@gmail.com',
-                From: "techonfra@gmail.com",
+                From: "mywhiteboardconsumer@gmail.com",
                 Subject: `${Onfra_join_form.elements['join_person_name'].value} want to join from website`,
                 Body: body
 

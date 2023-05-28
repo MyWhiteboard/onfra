@@ -458,23 +458,21 @@
 
             let body =
                 `
-                    Person Name: ${enroll_popup.elements['enrollperson_name'].value},
-                    Peson Number: ${enroll_popup.elements['enroll_person_number'].value},
-                    --------
-                    Wants to Enroll in 
-                    --------
-                    Course Name: Game Development Courses,
-                    --------
-                    Course Type: ${selected_what}
+                    <b>Person Name:</b> ${enroll_popup.elements['enrollperson_name'].value}<br>
+                    <b>Peson Number:</b> ${enroll_popup.elements['enroll_person_number'].value}<br>
+                    ------------------------<br>
+                    Wants to Enroll in <br>
+                    ------------------------<br>
+                    <b>Course Name:</b> Game Development Courses<br>
+                    ------------------------<br>
+                    <b>Course Type:</b> ${selected_what}
                 `;
 
             Email.send({
 
-                Host: "smtp.elasticemail.com",
-                Username: "techonfra@gmail.com",
-                Password: "26D9A777BF59EEA05FFD703ABAFAA0E3B5D5",
-                To: 'mywhiteboardconsumer@gmail.com',
-                From: "techonfra@gmail.com",
+                SecureToken: "f559df71-f6ec-402c-a239-d3e1c9220852",
+                To: "mywhiteboardconsumer@gmail.com",
+                From: "mywhiteboardconsumer@gmail.com",
                 Subject: `${enroll_popup.elements['enrollperson_name'].value} Wants to Enroll from website`,
                 Body: body
 

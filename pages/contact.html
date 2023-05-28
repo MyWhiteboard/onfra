@@ -290,18 +290,16 @@
 
             let body =
                 `
-                    Name: ${Onfra_contact_form.elements['contact_person_name'].value},
-                    Number: ${Onfra_contact_form.elements['contact_person_number'].value},
-                    Message: ${Onfra_contact_form.elements['contact_person_message'].value}
+                    <b>Name:</b> ${Onfra_contact_form.elements['contact_person_name'].value}<br>
+                    <b>Number:</b> ${Onfra_contact_form.elements['contact_person_number'].value}<br>
+                    <b>Message:</b> ${Onfra_contact_form.elements['contact_person_message'].value}
                 `;
 
             Email.send({
 
-                Host: "smtp.elasticemail.com",
-                Username: "techonfra@gmail.com",
-                Password: "26D9A777BF59EEA05FFD703ABAFAA0E3B5D5",
+                SecureToken: "f559df71-f6ec-402c-a239-d3e1c9220852",
                 To: 'smywhiteboard@gmail.com',
-                From: "techonfra@gmail.com",
+                From: "mywhiteboardconsumer@gmail.com",
                 Subject: `${Onfra_contact_form.elements['contact_person_name'].value} Contacted from website`,
                 Body: body
             }).then((message) => {
