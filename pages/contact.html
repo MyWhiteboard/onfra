@@ -287,6 +287,7 @@
         Onfra_contact_form.addEventListener('submit', (event) => {
 
             event.preventDefault();
+            remove_message_show_form()
 
             let body =
                 `
@@ -303,7 +304,6 @@
                 Subject: `${Onfra_contact_form.elements['contact_person_name'].value} Contacted from website`,
                 Body: body
             }).then((message) => {
-                remove_message_show_form()
                 setTimeout(() => {
                     Onfra_contact_form.elements['contact_person_name'].value = ''
                     Onfra_contact_form.elements['contact_person_number'].value = ''

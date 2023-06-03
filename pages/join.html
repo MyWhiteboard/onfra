@@ -227,6 +227,11 @@
                 </div>
 
                 <div class="contact_form_element">
+                    <label for="join_Position">Applying for</label>
+                    <input type="text" id="join_Position" name="join_Position" required>
+                </div>
+
+                <div class="contact_form_element">
                     <label for="join_person_Gender">Gender</label>
                     <input type="text" list="gender" id="join_person_Gender" name="join_person_Gender" required>
 
@@ -342,15 +347,17 @@
         Onfra_join_form.addEventListener('submit', (event) => {
 
             event.preventDefault();
+            remove_message_show_form()
 
             let body =
                 `
-                    <b>Full_Name:</b> ${Onfra_join_form.elements['join_person_name'].value}<br>
-                    <b>Date_of_Birth:</b> ${Onfra_join_form.elements['join_person_date_of_birth'].value}<br>
+                    <b>Full Name:</b> ${Onfra_join_form.elements['join_person_name'].value}<br>
+                    <b>Date of Birth:</b> ${Onfra_join_form.elements['join_person_date_of_birth'].value}<br>
                     <b>Age:</b> ${Onfra_join_form.elements['join_person_Age'].value}<br>
+                    <b>Position Applying for:</b> ${Onfra_join_form.elements['join_Position'].value}<br>
                     <b>Gender:</b> ${Onfra_join_form.elements['join_person_Gender'].value}<br>
-                    <b>Phone_number:</b> ${Onfra_join_form.elements['join_person_Number'].value}<br>
-                    <b>Email_Address:</b> ${Onfra_join_form.elements['join_person_email'].value}
+                    <b>Phone number:</b> ${Onfra_join_form.elements['join_person_Number'].value}<br>
+                    <b>Email Address:</b> ${Onfra_join_form.elements['join_person_email'].value}
                 `;
 
             // let file = Onfra_join_form.elements['join_person_cv'].files[0];
@@ -365,7 +372,6 @@
 
             }).then((message) => {
 
-                remove_message_show_form()
 
                 setTimeout(() => {
                     Onfra_join_form.elements['join_person_name'].value = ''
@@ -384,6 +390,10 @@
             if (message_submited.style.display == 'flex') {
                 message_submited.style.display = 'none';
                 Onfra_join_form.style.display = 'block';
+                let url = window.location.href;
+                url = url.slice(0, -15);
+                location.replace(`${url}`)
+
             } else {
                 message_submited.style.display = 'flex';
                 Onfra_join_form.style.display = 'none';

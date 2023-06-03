@@ -104,12 +104,28 @@
     display: none;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.message_submited svg {
+    margin: 0 0 20px 0;
+}
+
+.message_submited p {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 106%;
+    text-align: center;
+
+    color: #513ADD;
+
 }
 
 .message_submited button {
     width: max-content;
     background-color: #513ADD;
-    margin: 20px auto 0px auto;
+    margin: 20px auto 10px auto;
     color: white;
     border-radius: 20px;
     padding: 5px 50px;
@@ -127,4 +143,8 @@
 
 .message_submited button:active {
     outline: 0;
+}
+
+.message_submited span {
+    text-align: center;
 }
