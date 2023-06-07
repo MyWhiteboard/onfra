@@ -586,7 +586,12 @@ main {
     border-radius: 5px;
 }
 
+.course_box_container a {
+    color: #513ADD;
+}
+
 .course_box_container a:hover {
+    color: #513ADD;
     text-decoration: none;
 }
 
